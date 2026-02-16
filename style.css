@@ -1,22 +1,33 @@
-* {
-    height: 100%;
-    width: 100%;
+*{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
 }
 
-main {
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 0.8fr;
     grid-template-rows:  0.3fr 2fr 0.7fr;
     grid-template-areas: "navbar navbar"
-                        " content picture"
-                        "content2 content2"
+                         " content picture"
+                        "content2 content2";
 
 }
 
 #navbar {
     background-color: rgba(0, 255, 255, 0.541);
     grid-area: navbar;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
 }
 
 #content {
@@ -32,4 +43,34 @@ main {
 #picture {
     background-color: rgba(10, 4, 15, 0.459);
     grid-area: picture;
+}
+
+
+#navtext {
+    display: flex;
+    gap: 2em;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 17px;
+    font-size: 15px;
+    cursor: pointer;
+
+    
+    
+}
+#sign {
+    
+    color: dodgerblue;
+    background-color: white;
+    border: 2px solid dodgerblue;
+    
+}
+
+#started {
+    color: white;
+    background-color:dodgerblue
 }
