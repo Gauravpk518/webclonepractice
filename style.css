@@ -4,3 +4,32 @@
     margin: 0;
 }
 
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  0.3fr 2fr 0.7fr;
+    grid-template-areas: "navbar navbar"
+                        " content picture"
+                        "content2 content2"
+
+}
+
+#navbar {
+    background-color: rgba(0, 255, 255, 0.541);
+    grid-area: navbar;
+}
+
+#content {
+    background-color: rgba(255, 228, 196, 0.699);
+    grid-area: content;
+}
+
+#content2 {
+    background-color: rgba(137, 43, 226, 0.5);
+    grid-area: content2;
+}
+
+#picture {
+    background-color: rgba(10, 4, 15, 0.459);
+    grid-area: picture;
+}
