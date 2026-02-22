@@ -14,15 +14,20 @@ main {
     height: 100vh;  
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr;
     grid-template-areas: "navbar navbar navbar"
                         "textcontent textcontent textcontent"
                         "pic1 smalltext1 pic2"
                         "pic1 smalltext2 pic2";
+    background-color: rgb(63, 110, 95);
 }
 
 #navbar {
-    background-color: rgba(255, 255, 255, 0.541);
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+    background-color: rgb(201, 198, 198);
     grid-area: navbar;
     display: flex;
     justify-content: space-between;
@@ -73,26 +78,127 @@ main {
 }
 
 #textcontent {
-    background-color: brown;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: rgba(250, 253, 255, 0.753);
     grid-area: textcontent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+#textcontent h1 {
+    font-size: 80px;
+    font-weight: 400;
+}
+
+#buttondiv {
+    display: flex;
+    gap: 15px;
+    
+}
+
+#textcontent button {
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#button1 {
+    border: none;
+    color: white;
+    background-color: dodgerblue;
+}
+
+#button2 {
+    background-color: white;
+    color: dodgerblue;
+    border: 2px solid dodgerblue;
+    
 }
 
 #pic1 {
+    margin: 10px;
     background-color: rgb(180, 110, 25);
     grid-area: pic1;
+    background-image: url(boy.png);
+
+    background-size: cover;
+    border-radius: 20px;
+
 }
 
 #pic2 {
+    margin: 10px;
     background-color: rgb(73, 18, 18);
     grid-area: pic2;
+    background-image: url(girl.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+
+
+
 }
 
 #smalltext1 {
-    background-color: rgb(0, 46, 59);
+    background-color: rgba(30, 143, 255, 0.801);
     grid-area: smalltext1;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    padding: 20px;
+    color: white;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+#smalltext1 h1 {
+    font-size: 60px;
+    font-weight: 500;
+}
+
+#smalltext1 h3 {
+    font-weight: 500;
 }
 
 #smalltext2 {
-    background-color: rgb(27, 59, 71);
+    background-color: rgba(0, 0, 0, 0.74);
     grid-area: smalltext2;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    padding: 20px;
+    color: white;
+    border-radius: 20px;
+    margin: 10px;
+    
 }
+
+#smalltext2 h1 {
+    font-size: 60px;
+    font-weight: 500;
+}
+#smalltext2 h2 {
+    font-size: 25px;
+    font-weight: 500;
+    
+}
+#smalltext2 i {
+    background-color: grey;
+    border: 10px solid grey;
+    border-radius: 50%;
+}
+
+#smalltext2 h3 {
+    font-weight: 500;
+}
+
+
