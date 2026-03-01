@@ -150,7 +150,7 @@ html, body {
 #picturebox{
     height: 550px;
     width: 500px;
-    background-image: url(/girl.png);
+    background-image: url(girl.png);
     background-size: cover;
     border-radius: 30px;
 }
